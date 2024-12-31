@@ -5,7 +5,7 @@ namespace GenericRepository.Web.Repository
 {
     public class AuthorRepository : GenericRepository<Author>, IGenericRepository<Author>
 	{
-		public AuthorRepository(AppDbContext dbContext) : base(dbContext)
+		public AuthorRepository(PostgresDbContext dbContext) : base(dbContext)
 		{
 		}
 	}

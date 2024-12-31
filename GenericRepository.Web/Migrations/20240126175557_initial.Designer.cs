@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace GenericRepository.Web.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
+    [DbContext(typeof(PostgresDbContext))]
     [Migration("20240126175557_initial")]
     partial class initial
     {

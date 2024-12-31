@@ -5,9 +5,9 @@ namespace GenericRepository.Web.Entities
     public class Author
 	{
 		[Key]
-		public string? Id { get; set; }
+		public string? Id { get; init; }
 		[Required]
-		public string? Name { get; set; }
+		public string? Name { get; init; }
 	}
 }
 

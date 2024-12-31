@@ -5,8 +5,8 @@ namespace GenericRepository.Web.Repository
 {
 	public class GenericRepository<T> : IGenericRepository<T> where T : class
 	{
-		private readonly AppDbContext dbContext;
-		public GenericRepository(AppDbContext dbContext)
+		private readonly PostgresDbContext dbContext;
+		public GenericRepository(PostgresDbContext dbContext)
 		{
 			this.dbContext = dbContext;
 		}

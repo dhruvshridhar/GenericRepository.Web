@@ -1,12 +1,11 @@
-﻿using System;
-using GenericRepository.Web.Entities;
+﻿using GenericRepository.Web.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace GenericRepository.Web.Database
 {
-	public class AppDbContext : DbContext
+	public class PostgresDbContext : DbContext
 	{
-		public AppDbContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
+		public PostgresDbContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
 		}
 
@@ -14,4 +13,3 @@ namespace GenericRepository.Web.Database
 		public DbSet<Author> authors { get; set; }
 	}
 }
-
